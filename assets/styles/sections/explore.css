@@ -1,0 +1,54 @@
+.explore {
+    position: relative;
+}
+
+.explore__container {
+    padding-inline: 0;
+}
+
+.explore__figure {
+    position: absolute;
+    overflow: hidden;
+}
+
+.explore__img {
+    width: 100%;
+    height: 333px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.explore__shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg,
+                              hsla(0,0%,0%) 5%,
+                              hsla(0,0%,0%, 0) 40%,
+                              hsla(0,0%,0%, 0) 60%,
+                              hsla(0,0%,0%) 92%);
+}
+
+.explore__content {
+    display: grid;
+    position: relative;
+    padding-top: 16rem;
+    text-align: center;
+    row-gap: 2.5rem;
+}
+
+.explore__user {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 0.5rem;
+}
+
+.explore__profile {
+    width: 30px;
+    border-radius: 50%;
+    font-size: var(--fs-sm);
+    color: var(--title-color);
+}

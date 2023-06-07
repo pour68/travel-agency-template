@@ -1,0 +1,22 @@
+.popular__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.popular__title {
+    margin-block: 0.5rem;
+}
+
+.popular__figure {
+    position: relative;
+    overflow: hidden;
+}
+
+.popular__img {
+    transition: transform 0.4s;
+}
+
+.popular__card:hover .popular__img {
+ transform: scale(1.2);
+}

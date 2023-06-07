@@ -1,0 +1,145 @@
+/* mobile */
+@media screen and (max-width: 480px) {
+    .popular__cards {
+        grid-template-columns: 1fr;
+        row-gap: 1.5rem;
+    }
+
+    .footer__content {
+        grid-template-columns: 1fr;
+    }
+
+    .footer__data {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav__menu {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        background-color: hsla(0, 0%, 0%, 0.3);
+        width: 100%;
+        padding-block: 4rem;
+        backdrop-filter: blur(24px);
+        -webkit-backdrop-filter: blur(24px);
+        transition: top 0.4s;
+    }
+
+    /* show menu */
+    .nav__menu.nav__active {
+        top: 0;
+    }
+
+    .nav__list {
+        text-align: center;
+        flex-direction: column;
+        row-gap: 2.5rem;
+    }
+
+    .nav__link {
+        color: var(--title-color);
+        font-family: var(--second-font);
+        font-weight: var(--fw-medium);
+    }
+
+    .nav__close, .nav__toggle {
+        display: flex;
+        font-size: 1.25rem;
+        color: var(--title-color);
+        cursor: pointer;
+        font-weight: var(--fw-semi-bold);
+    }
+
+    .nav__close {
+        position: absolute;
+        top: 1rem;
+        right: 1.5rem;
+    }
+}
+
+/* desktop */
+@media (min-width: 768px) {
+    .home__data {
+        text-align: left;
+    }
+
+    .home__cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .about__container {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+
+    .about__data {
+        text-align: left;
+    }
+
+    .about__img {
+        width: 450px;
+    }
+
+    .explore__container {
+        grid-template-columns: repeat(2, 1fr);
+        display: grid;
+    }
+
+    .explore__figure, .explore__content  {
+        position: relative;
+    }
+
+    .explore__content {
+        padding-top: 0;
+        row-gap: 0;
+        text-align: left;
+    }
+
+    .explore__shadow {
+        background: linear-gradient(180deg,
+                                  hsla(0,0%,0%) 5%,
+                                  hsla(0,0%,0%, 0) 40%,
+                                  hsla(0,0%,0%, 0) 80%,
+                                  hsla(0,0%,0%) 95%);
+    }
+
+    .explore__user {
+        justify-content: flex-start;
+    }
+
+    .popular__cards {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1.5rem;
+    }
+
+    .join__container {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .join__img {
+        width: 380px;
+    }
+
+    .join__figure {
+        order: 1;
+    }
+
+    .join__data {
+        order: 2;
+        text-align: left;
+    }
+
+    .footer__content {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .footer__data {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2.5rem 3.5rem;
+    }
+}
+

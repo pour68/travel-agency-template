@@ -1,0 +1,51 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Poppins:wght@400;500&display=swap');
+
+/* reset browser default behaviour */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--body-color);
+}
+
+body,
+button,
+input {
+  font-family: var(--body-font);
+  font-size: var(--fs-md);
+  color: var(--text-color);
+}
+
+button,
+input {
+  outline: none;
+  border: none;
+}
+
+h1, h2, h3, h4 {
+    color: var(--title-color);
+    font-family: var(--second-font);
+    font-weight: var(--fw-semi-bold);
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}

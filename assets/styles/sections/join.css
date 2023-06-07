@@ -1,0 +1,48 @@
+.join__container {
+    row-gap: 3rem;
+    padding-bottom: 2.5rem;
+}
+
+.join__data {
+    text-align: center;
+}
+
+.join__description {
+    margin-bottom: 2rem;
+}
+
+.join__form {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+}
+
+.join__input {
+    padding: 1.25rem 1rem;
+    background-color: var(--container-color);
+}
+
+.join__figure {
+    position: relative;
+    justify-self: center;
+    overflow: hidden;
+}
+
+.join__img {
+    width: 300px;
+    transition: transform 0.4s;
+}
+
+.join__figure:hover .join__img {
+    transform: scale(1.2);
+}
+
+.join__shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, hsla(0,0%,0%, 0) 50%,
+                            hsla(0,0%,0%) 125%);
+}
