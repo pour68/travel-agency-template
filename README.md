@@ -1,13 +1,13 @@
 # Responsive Travel Website
 
-Resposnsive travel agency template for the web.
+Responsive travel agency template for the web.
 
 ### Responsive Travel Website
 
-- Responsive travel template for web
+- Responsive travel agency web template
 - Scroll animation
 - Smooth scrolling
 - Mobile-first design
-- Resposive template
+- Responsive website
 
 ![preview img](/preview.png)
